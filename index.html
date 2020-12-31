@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<ul>
+		  <li><a href="">Home</a></li>
+		  <li><a href="displaydata.php">Peminjaman</a></li>
+		</ul>
+		<div class="form-style-6">
+			<div class="head">
+			<center><img class= "image" src="images/Logo.png" alt="Logo"></center>
+		</div>
+				<form method="POST" action="connection.php" enctype="multipart/form-data" onsubmit="return validate(this)">
+					<input type="text" id="name" name="nama" placeholder="Nama*" required/>
+					<input type="text" id="name" name="npm" placeholder="NPM*" required></textarea>
+					<label for="Peminjaman"><input id="peminjaman" type="radio" name="pilihan" value="Peminjaman"> Peminjaman</label>
+					<label for="Pengembalian"><input id="pengembalian" type="radio" name="pilihan" value="Pengembalian"> Pengembalian</label><br>
+					<br>
+					<select name="kode_proyektor">
+						<option selected disabled>Pilih Kode Proyektor*</option>
+						<option value="TI2018">TI2018</option>
+						<option value="TE2018">TE2018</option>
+						<option value="TI2019">TI2019</option>
+						<option value="TE2019">TE2019</option>
+						<option value="TI2020">TI2020</option>
+						<option value="TE2020">TE2020</option>
+				  </select>
+					<input type="date" id="tanggal" name="tanggal" placeholder="Tanggal*" required>
+					<input type="time" id="name" name="jam" placeholder="Jam*" required/>
+					<input type="submit" id="submit" name="submit">
+			</form>
+		</div>
+	</body>
+</html>
